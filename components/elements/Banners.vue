@@ -1,7 +1,21 @@
 <template>
 
-    <ul class="grid grid-cols-4">
+    <ul class="grid grid-cols-4">   
+        <li v-for="item in element.data.images.value" class="border aspect-[2/3]">
 
-        <li v-for="item in [1,2,3,4]" class="border h-128">aaa</li>
+            <img :src="item.blob" />
+        </li>
+
     </ul>
 </template>
+
+<script setup>
+
+	const props = defineProps({
+		element: {
+			type: Object
+		}
+	})
+
+
+</script>
