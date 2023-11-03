@@ -1,6 +1,6 @@
 <template>
 
-    <ul class="grid grid-cols-2 lg:grid-cols-4 gap-3 px-3 lg:px-0">   
+    <ul class="grid grid-cols-2 lg:grid-cols-4 gap-3">   
         <li v-for="item in element.data.banners" class="relative aspect-[2/3] rounded-xl overflow-hidden bg-gray-100">
             <Image :image="item.image" class="max-w-full max-h-full" />
             <div class="absolute text-left left-4 lg:left-8" :class="[item.position == 'top' ? 'top-15' : 'bottom-25']">
